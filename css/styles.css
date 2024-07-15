@@ -592,11 +592,16 @@ footer .social-medias-list{
     padding: 12px;
 }
 .Subcribe-footer{
+    display: flex; 
+
+
+}
+
+
+.label-footer-email{
     gap: 24px;
-    display: inline-flex;
-    align-items: center;
-    color:rgba(255, 255, 255, 1);
-    
+
+
 }
 
 .form-label{
@@ -605,29 +610,50 @@ footer .social-medias-list{
     gap: 16px; 
     margin-bottom: 0;
 }
-
-.Subcribe-footer button{
-    
-    width:165px;
-    height: 40px;
-    margin-top:40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    background-color: rgba(77, 90, 229, 1);
-    color: white;
-    border:none;
+.subscribe{
+    margin-bottom: 16px; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff; 
 }
 .input_email{
-    border: 1px solid white;
-    background-color: rgba(46, 47, 66, 1);
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    color: #ffffff;
     width: 264px;
     height: 40px;
     border-radius: 4px;
 }
+.input_email::placeholder{
+    color:#ffffff;
+}
+
+.button-submit-email{
+    min-width: 165px; 
+    height: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none; 
+    border-radius: 4px;
+}
 .footer-telegram-icon {
-    fill: #ffffff;
+    margin-left: 16px;
   }
 
 .modal-overlay{
@@ -638,14 +664,23 @@ footer .social-medias-list{
     top: 0;
     left: 0;
     align-items: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal{
+    position: absolute;
     width: 408px;
-    height: 584px;
+    min-height: 584px; 
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #F4F4FD;
     display: flex;
     margin: 0 auto;
     margin-top: 80px;
+    padding: 72px 24px 24px 24px; 
+    top: 50%; 
+    left: 50%; 
     
     gap: 16px;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -653,27 +688,172 @@ footer .social-medias-list{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-modal{
+    margin-bottom: 8px;
+
+}
+.form-label-modal{
+    font-size: 12px; 
+    line-height: 1.17; 
+    letter-spacing: 0.04em;
+    color:  #8e8f99; 
+    display: block;
+    margin-bottom: 4px; 
+
+}
+.label-and-icon{
+    position: relative; 
 
 }
 
+.input-modal{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 4px; 
+    background-color: transparent; 
+    padding-left: 38px; 
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: #4D5AE5; 
+
+}
+
+.input-modal:focus + .modal-icon{
+    fill: #4D5AE5;
+}
+.modal-button-x{
+    position:absolute; 
+    top: 24px;
+    right: 24px; 
+    width: 24px; 
+    height: 24px;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #e7e9fc; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0; 
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+.modal-button-x:hover .modal-button-x:focus{
+    background-color: #404bbf; 
+    border: none; 
+    fill: #ffffff;
+}
+.svg-x{
+    fill:#ffffff;
+}
+.svg-x{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 .p-modal{
-    font-family: Roboto;
-    font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
-    color:rgba(46, 47, 66, 1);
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 16px;
+
 
 
 }
 .icon-modal-in-label{
-    background-color:white;
-    border: none;
-    width: 18px;
-    height: 24px;
+    border:none;
+    background-color: transparent;
+}
+
+.icon-modal-in-label:hover, .icon-modal-in-label:focus{
+    background-color: transparent;
 }
 
 .modal-icon{
-    fill:#ffffff;
+    position: absolute;
+    left: 16px;
+    top: 50%; 
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.text-area{
+    width: 100%;
+    height: 120px;
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px; 
+    background-color: transparent; 
+    padding: 8px 16px; 
+    outline: transparent;
+    resize: none; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border-color: #4D5AE5; 
+
+}
+
+.checkbox{
+    margin-bottom: 24px; 
+
+}
+
+
+
+.label-privacy{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
+    color: #8e8f99;
+}
+
+.span-privacy{
+    width: 16px; 
+    height: 16px; 
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    fill: transparent; 
+    
+
+}
+
+input[type="checkbox"]:checked + label span {
+    background-color: var(--checked-bg-color, #404bbf);
+    border: none;
+    fill:white;
+  }
+
+.privacy-policy{
+    color:  #4d5ae5;
+
+}
+.modal-button-l{
+    display: block; 
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
