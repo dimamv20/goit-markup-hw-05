@@ -804,7 +804,7 @@ footer .social-medias-list{
     padding: 8px 16px; 
     outline: transparent;
     resize: none; 
-    transition: border-color 
+    transition: border-color;
 }
 
 .text-area:focus{
