@@ -162,12 +162,12 @@ address{
 .contact-address:focus{
     color:#404bbf;
 }
-button{
+order-button{
     background-color: rgba(77, 90, 229, 1);
     cursor: pointer;
 }
 
-button:active, button:focus, link:active,link:focus{
+order-button:active, order-button:focus, link:active,link:focus{
     background-color: rgba(64, 75, 191, 1);
 }
 .first-page{
@@ -591,8 +591,9 @@ footer .social-medias-list{
     border: 1px solid #404BBF;
     padding: 12px;
 }
-.Subcribe-footer{
+.subcribe-footer-form{
     display: flex; 
+    gap: 24px;
 
 
 }
@@ -671,9 +672,10 @@ footer .social-medias-list{
     width: 408px;
     min-height: 584px; 
     background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: flex;
     margin: 0 auto;
     margin-top: 80px;
@@ -682,6 +684,7 @@ footer .social-medias-list{
     left: 50%; 
     
     gap: 16px;
+}
 
 .content-modal{
     margin-bottom: 8px;
@@ -735,7 +738,7 @@ footer .social-medias-list{
 
 }
 
-.modal-button-x:hover{
+.modal-button-x:hover {
     background-color: #404bbf; 
     border: none; 
 }
@@ -743,6 +746,7 @@ footer .social-medias-list{
 .modal-button-x:focus{
     background-color: #404bbf; 
     border: none; 
+    fill: #ffffff;
 }
 .svg-x{
     fill:#ffffff;
